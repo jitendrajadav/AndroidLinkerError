@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+		<integer>2</integer>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>CFBundleDisplayName</key>
+	<string>KegIDBeta</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.anotherroundapps.KegIDBeta</string>
+	<key>CFBundleVersion</key>
+	<string>4</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Default</string>
+	</array>
+	<key>CFBundleName</key>
+	<string>KegID</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>LSApplicationQueriesSchemes</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>support.kegid.com</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>appcenterURL</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>appcenter-b80b8476-04cf-4fc3-b7f7-be06ba7f2213</string>
+			</array>
+		</dict>
+	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>The beacons or geofences or GPS always have you!</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>The beacons or geofences or GPS always have you!</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>The beacons or geofences or GPS always have you!</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+		<string>external-accessory</string>
+		<string>fetch</string>
+		<string>processing</string>
+	</array>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>MKDirectionsRequest</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.apple.maps.directionsrequest</string>
+			</array>
+		</dict>
+	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UISupportedExternalAccessoryProtocols</key>
+	<array>
+		<string>com.cognex.dmcc</string>
+		<string>com.demo.data</string>
+		<string>com.zebra.rawport</string>
+	</array>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>CFBundleShortVersionString</key>
+	<string>4.0.0.0</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Required for pedometer</string>
+	<key>MinimumOSVersion</key>
+	<string>13.2</string>
+</dict>
+</plist>

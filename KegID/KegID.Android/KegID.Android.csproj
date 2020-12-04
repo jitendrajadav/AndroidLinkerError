@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{667AE4D8-14A0-4C8F-82F3-59DE3B35E1AB}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KegID.Android</RootNamespace>
+    <AssemblyName>KegID.Android</AssemblyName>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <AndroidKeyStore>false</AndroidKeyStore>
+    <SolutionDir>..\</SolutionDir>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
+    <JavaMaximumHeapSize>3G</JavaMaximumHeapSize>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidSupportedAbis>
+    </AndroidSupportedAbis>
+    <JavaMaximumHeapSize>3G</JavaMaximumHeapSize>
+    <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
+    <SolutionDir>..\</SolutionDir>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <AotAssemblies>false</AotAssemblies>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidPackageFormat>aab</AndroidPackageFormat>
+    <AndroidEnableMultiDex>false</AndroidEnableMultiDex>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
+    <AndroidUseSharedRuntime>true</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>true</AndroidUseSharedRuntime>
+    <AndroidSupportedAbis>
+    </AndroidSupportedAbis>
+    <JavaMaximumHeapSize>2G</JavaMaximumHeapSize>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <SolutionDir>..\</SolutionDir>
+    <AotAssemblies>false</AotAssemblies>
+    <AndroidEnableProfiledAot>true</AndroidEnableProfiledAot>
+    <MandroidI18n />
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidEnableDesugar>true</AndroidEnableDesugar>
+    <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <AndroidPackageFormat>aab</AndroidPackageFormat>
+    <AndroidLinkSkip>Xamarin.Forms.Platform.Android;Xamarin.Forms.Platform;Xamarin.Forms.Core;Xamarin.Forms.Xaml;FormsViewGroup;Shiny.Core;</AndroidLinkSkip>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidEnableMultiDex>false</AndroidEnableMultiDex>
+    <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
+    <AndroidLinkTool>r8</AndroidLinkTool>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs" Version="7.1.0.468" />
+    <PackageReference Include="AndHUD" Version="1.4.2" />
+    <PackageReference Include="Forms9Patch">
+      <Version>2.4.8</Version>
+    </PackageReference>
+    <PackageReference Include="fusillade" Version="2.2.9" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.0.0" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.0.0" />
+    <PackageReference Include="Microsoft.AppCenter.Distribute" Version="4.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Net.Http.Headers" Version="2.2.8" />
+    <PackageReference Include="Microsoft.NETCore.Platforms" Version="5.0.0" />
+    <PackageReference Include="modernhttpclient" Version="2.4.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Plugin.CrossPlatformTintedImage" Version="1.0.0" />
+    <PackageReference Include="Plugin.CurrentActivity" Version="2.1.0.4" />
+    <PackageReference Include="Polly" Version="7.2.1" />
+    <PackageReference Include="Prism.DryIoc.Extensions">
+      <Version>7.2.0.1054</Version>
+    </PackageReference>
+    <PackageReference Include="Prism.Plugin.Popups">
+      <Version>7.2.0.1046</Version>
+    </PackageReference>
+    <PackageReference Include="Punchclock" Version="3.3.2" />
+    <PackageReference Include="Realm" Version="5.1.2" />
+    <PackageReference Include="Refit" Version="5.2.4" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.0.0.7" />
+    <PackageReference Include="Scandit.BarcodePicker.Unified" Version="5.17.2.10" />
+    <PackageReference Include="SegmentedControl.FormsPlugin" Version="2.0.1" />
+    <PackageReference Include="Shiny.Prism" Version="7.2.0.1054" />
+    <PackageReference Include="Shiny.Locations" Version="1.2.0.1755" />
+    <PackageReference Include="Splat" Version="9.8.1" />
+    <PackageReference Include="Xam.Plugin.Connectivity" Version="4.0.0.190-beta" />
+    <PackageReference Include="Xam.Plugins.Settings" Version="4.1.0-beta" />
+    <PackageReference Include="Xamarin.AndroidX.AppCompat.Resources">
+      <Version>1.1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Browser" Version="1.2.0.2" />
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.1.0.5" />
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0.5" />
+    <PackageReference Include="Xamarin.AndroidX.CardView" Version="1.0.0.5" />
+    <PackageReference Include="Xamarin.AndroidX.MediaRouter" Version="1.2.0" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1687" />
+    <PackageReference Include="Xamarin.Forms.Maps" Version="4.8.0.1687" />
+    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.8.0.1687" />
+    <PackageReference Include="Zebra.Printer.SDK" Version="2.15.2634" />
+    <PackageReference Include="Xamarin.GooglePlayServices.Base" Version="117.2.1" />
+    <PackageReference Include="Xamarin.GooglePlayServices.Basement" Version="117.2.1" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Migration" Version="1.0.8" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DependencyServices\AndroidCloseApplication.cs" />
+    <Compile Include="DependencyServices\ConnectionManagerImplementation.cs" />
+    <Compile Include="DependencyServices\PermissionAndroid.cs" />
+    <Compile Include="DependencyServices\PhoneDialerAndroid.cs" />
+    <Compile Include="DependencyServices\ShareFileImplementation.cs" />
+    <Compile Include="Renderers\SignaturePadRenderer.cs" />
+    <Compile Include="DependencyServices\XsltContent.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="MainApplication.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderers\NullableDatePickerRenderer.cs" />
+    <Compile Include="Renderers\SelectableEntryRenderer.cs" />
+    <Compile Include="Renderers\ZebraLabelRenderer.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="SplashActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.axml" />
+    <AndroidResource Include="Resources\layout\Toolbar.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\styles.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KegID\KegID.csproj">
+      <Project>{d5c32361-0b30-4fa3-bce6-49d790cfee42}</Project>
+      <Name>KegID</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\actionaccept.png">
+      <Link>Resources\drawable\actionaccept.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\actionsearch.png">
+      <Link>Resources\drawable\actionsearch.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\actionshare.png">
+      <Link>Resources\drawable\actionshare.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\add.png">
+      <Link>Resources\drawable\add.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\camera.png">
+      <Link>Resources\drawable\camera.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\check.png">
+      <Link>Resources\drawable\check.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\collectionslabels.png">
+      <Link>Resources\drawable\collectionslabels.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\disallow.png">
+      <Link>Resources\drawable\disallow.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\fillkegs.png">
+      <Link>Resources\drawable\fillkegs.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\invalidtools.png">
+      <Link>Resources\drawable\invalidtools.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\kegbg.png">
+      <Link>Resources\drawable\kegbg.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\kegflatfilledartboard.png">
+      <Link>Resources\drawable\kegflatfilledartboard.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\keghalostraight.png">
+      <Link>Resources\drawable\keghalostraight.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\keghalostraightwhite.png">
+      <Link>Resources\drawable\keghalostraightwhite.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\kegidlogo.png">
+      <Link>Resources\drawable\kegidlogo.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\manifestsfilledartboard.png">
+      <Link>Resources\drawable\manifestsfilledartboard.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\menurefresh.png">
+      <Link>Resources\drawable\menurefresh.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\movekegs.png">
+      <Link>Resources\drawable\movekegs.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\new0.png">
+      <Link>Resources\drawable\new0.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\new1.png">
+      <Link>Resources\drawable\new1.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\new2.png">
+      <Link>Resources\drawable\new2.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\palletsmall.png">
+      <Link>Resources\drawable\palletsmall.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\palletsquarefilledartboard.png">
+      <Link>Resources\drawable\palletsquarefilledartboard.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\pencil.png">
+      <Link>Resources\drawable\pencil.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\question.png">
+      <Link>Resources\drawable\question.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\setting.png">
+      <Link>Resources\drawable\setting.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\validationerror.png">
+      <Link>Resources\drawable\validationerror.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\validationquestion.png">
+      <Link>Resources\drawable\validationquestion.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\warn.png">
+      <Link>Resources\drawable\warn.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\tags.png">
+      <Link>Resources\drawable\tags.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Colors.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\triangle.png">
+      <Link>Resources\drawable\triangle.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\validationok.png">
+      <Link>Resources\drawable\validationok.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\collectionscloud.png">
+      <Link>Resources\drawable\collectionscloud.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\maintenace.png">
+      <Link>Resources\drawable\maintenace.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\newkeg.png">
+      <Link>Resources\drawable\newkeg.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\manifestkegstar.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\manifestprint.xslt">
+      <SubType>Designer</SubType>
+    </AndroidAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\palletprintnew.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\repairmanifestprint.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\new3.png">
+      <Link>Resources\drawable\new3.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\splash_screen.xml" />
+    <AndroidResource Include="Resources\drawable\tab_indicator_ab_maintheme.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_unselected_pressed_maintheme.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_selected_focused_maintheme.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_selected_maintheme.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_selected_pressed_maintheme.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_unselected_focused_maintheme.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_unselected_maintheme.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_selected_focused_maintheme.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_selected_maintheme.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_selected_pressed_maintheme.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_unselected_focused_maintheme.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_unselected_maintheme.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_unselected_pressed_maintheme.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_selected_focused_maintheme.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_selected_maintheme.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_selected_pressed_maintheme.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_unselected_focused_maintheme.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_unselected_maintheme.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_unselected_pressed_maintheme.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\dimens.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FodyWeavers.xml" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\xml\provider_paths.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProguardConfiguration Include="proguard.cfg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\KegID\Assets\expand.png">
+      <Link>Resources\drawable\expand.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="linker.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties XamarinHotReloadUnhandledDeviceExceptionKegIDAndroidHideInfoBar="True" XamarinHotReloadDebuggerTimeoutExceptionKegIDAndroidHideInfoBar="True" TriggeredFromHotReload="False" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

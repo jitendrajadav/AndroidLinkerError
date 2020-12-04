@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="KegID.Views.LoginView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+    BackgroundColor="{StaticResource pageBGColor}"
+    Visual="Material">
+
+    <ContentPage.Content>
+
+        <Grid
+            Margin="20"
+            AutomationId="mainGrd"
+            Style="{StaticResource GirdRowSpacing}">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Image
+                Margin="40"
+                AutomationId="imgLogo"
+                BackgroundColor="Transparent"
+                HorizontalOptions="Center"
+                VerticalOptions="Start">
+
+                <Image.Source>
+                    <FileImageSource File="{OnPlatform Android=kegidlogo.png, iOS=kegidlogo.png, UWP=Assets/kegidlogo.png}" />
+                </Image.Source>
+            </Image>
+
+            <Entry
+                Grid.Row="1"
+                AutomationId="usernameEntry"
+                Placeholder="{Binding Resources[hint_username]}"
+                Style="{StaticResource BasicEntryStyle}"
+                Text="{Binding Username}" />
+
+            <Entry
+                Grid.Row="2"
+                AutomationId="passwordEntry"
+                IsPassword="True"
+                Placeholder="{Binding Resources[hint_password]}"
+                Style="{StaticResource BasicEntryStyle}"
+                Text="{Binding Password}" />
+
+            <Button
+                x:Name="lblLogin"
+                Grid.Row="3"
+                Margin="0,20,0,0"
+                AutomationId="loginButton"
+                Command="{Binding LoginCommand}"
+                Style="{StaticResource BottomButtonTitleStyle}"
+                Text="{Binding Resources[button_login]}" />
+
+            <Label
+                Grid.Row="4"
+                HorizontalOptions="CenterAndExpand"
+                Text="{Binding APIBase}"
+                TextColor="Blue"
+                VerticalOptions="EndAndExpand" />
+        </Grid>
+
+    </ContentPage.Content>
+
+</ContentPage>
