@@ -55,7 +55,7 @@
       <Version>3.3.2</Version>
     </PackageReference>
     <PackageReference Include="Refit">
-      <Version>5.2.4</Version>
+      <Version>6.0.0-preview.37</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.UITest" Version="3.0.11" />
     <PackageReference Include="NUnitTestAdapter" Version="2.3.0" />
